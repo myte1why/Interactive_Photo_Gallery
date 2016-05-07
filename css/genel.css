@@ -6,39 +6,6 @@
 	text-decoration: none;
 	font-size: 16px;
 }
-	.lb-nav a.lb-prev,
-	.lb-nav a.lb-next{
-		position: fixed;
-		opacity: 1;
-	}
-	.lb-image{
-    max-width: 980px;
-    max-height: 60vh;
-	}
-	.lb-dataContainer{
-		width: 600px;
-		margin-top: 8vh;
-		font-size: 2em;
-		font-weight: bold;
-	}
-	.lb-data .lb-close {
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-    z-index: 999;
-}
-.item-desc {
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    position: absolute;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1rem;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 body {
 	position: absolute;
 	width: 98.6vw;
@@ -62,23 +29,25 @@ header{
     margin-top: 6em;
     height: calc(100vh - 6em);
 }
-/* float clearfix */
-.clearfix::after{
-	content: "";
-	display: table;
-	clear: both;
-}
+	.thumb{
+		margin: 0 auto 5vh auto;
+	}
 /* media query set */
 @media ( max-width: 425px ) {
-	img{
-		width: 90%;
-		margin: 0 auto 5vh auto;
+	.lightboxOverlay{
+		width: 100%;
+	}
+	.thumb{
+		width: 90vw;
+		margin: 0 5vw 5vh;
 	}
 }
 @media (min-width : 426px ) {
-	img{
-		max-width: 200px;
-		margin-bottom: 10vh;
+	.list{
+		margin: 6em 5vw 5vh;		
+	}
+	.thumb{
+		width: 45vw;
 	}
 }
 @media ( min-width : 961px ) {
@@ -87,7 +56,7 @@ header{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	img{
+	.thumb{
 		max-width: 195px;
 	}
 	a{
